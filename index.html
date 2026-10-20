@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Stekan Stars DEMO — Скачать</title>
+<title>Stekan Stars — Скачать</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -60,7 +60,7 @@
     background:
       radial-gradient(ellipse at 30% 30%, rgba(201,162,39,.14), transparent 55%),
       radial-gradient(ellipse at 75% 70%, rgba(110,139,107,.14), transparent 55%),
-      url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1600&q=70') center/cover no-repeat;
+      url('fon.png') center/cover no-repeat;
     filter:saturate(.85) brightness(.5);
   }
   .hero::after{
@@ -147,7 +147,7 @@
   .btn-small:hover{background:var(--gold);color:#1A1200;border-color:var(--gold)}
   .btn-disabled {
     border-color: transparent; 
-    color: var(--muted);
+    color:var(--muted);
     cursor: not-allowed;
     opacity: 0.7;
   }
@@ -244,19 +244,6 @@
     font-size:.8rem;
   }
 
-  /* ---------- HASH ---------- */
-  .hash{
-    margin-top:14px;
-    font-family:ui-monospace,monospace;
-    font-size:.76rem;
-    color:var(--muted);
-    background:var(--panel);
-    border:1px solid var(--border);
-    padding:10px 14px;border-radius:10px;
-    word-break:break-all;
-  }
-  .hash strong{color:var(--gold-soft)}
-
   /* ---------- TOAST УВЕДОМЛЕНИЕ ---------- */
   .toast {
     position: fixed;
@@ -304,28 +291,24 @@
   <div class="hero-bg"></div>
   <div class="wrap">
     <div class="hero-inner">
-      <span class="badge">2D RPG · Демо-версия</span>
+      <span class="badge">2D RPG · Битва</span>
       <h1>Stekan Stars</h1>
-      <p class="lead">Погрузись в мир Стекана. Попробуй бесплатную демо-версию прямо сейчас и оцени атмосферу приключения.</p>
+      <p class="lead">Погрузись в мир Стекана. Скачай игру прямо сейчас и окунись в атмосферу сражений.</p>
 
       <div class="download-row">
-        <!-- Ссылка на файл stekan-stars-demo.apk -->
-        <a href="download/stekan-stars-demo.apk" class="btn-download" download>
+        <!-- Ссылка на Google Drive -->
+        <a href="https://drive.google.com/uc?export=download&id=1ha3O320xGlYNR_FH-Sw-g4wZw842PWEL" class="btn-download" target="_blank">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
             <polyline points="7 10 12 15 17 10"/>
             <line x1="12" y1="15" x2="12" y2="3"/>
           </svg>
-          Скачать демо (Android)
+          Скачать (Android)
         </a>
         <div class="dl-meta">
-          <strong>Android</strong> · Демо · 84 МБ<br>
+          <strong>Android</strong> · 84 МБ · Версия 63.5<br>
           Бесплатно
         </div>
-      </div>
-
-      <div class="hash">
-        <strong>SHA-256:</strong> Вставь_сюда_хеш_файла_если_нужно
       </div>
     </div>
   </div>
@@ -343,8 +326,8 @@
       <!-- Android -->
       <div class="platform-card">
         <h3>🤖 Android</h3>
-        <div class="ver">Демо · 84 МБ</div>
-        <a href="download/stekan-stars-demo.apk" class="btn-small" download>Скачать .apk</a>
+        <div class="ver">Версия <span>63.5</span> · 84 МБ</div>
+        <a href="https://drive.google.com/uc?export=download&id=1ha3O320xGlYNR_FH-Sw-g4wZw842PWEL" class="btn-small" target="_blank">Скачать .apk</a>
       </div>
 
       <!-- Windows -->
@@ -365,9 +348,9 @@
       <p>Кадры из игры — без апскейла, в нативном разрешении.</p>
     </div>
     <div class="shots">
-      <div class="shot"><img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=70" alt="Скриншот 1"></div>
-      <div class="shot"><img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=70" alt="Скриншот 2"></div>
-      <div class="shot"><img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&w=800&q=70" alt="Скриншот 3"></div>
+      <div class="shot"><img src="sc1.png" alt="Скриншот 1"></div>
+      <div class="shot"><img src="sc2.png" alt="Скриншот 2"></div>
+      <div class="shot"><img src="sc3.png" alt="Скриншот 3"></div>
     </div>
   </div>
 </section>
@@ -380,14 +363,14 @@
     </div>
     <div class="about-grid">
       <div>
-        <p>Здесь — 2–3 абзаца о сюжете и мире Стекана. Кто главный герой, что движет историей, какие ключевые механики. Пиши живо, но коротко: людям важно понять «моё ли это» за 15 секунд.</p>
-        <p>Второй абзац — про атмосферу, музыку, художественный стиль. Упомяни, что игра сделана автором, а сайт — с его разрешения.</p>
+        <p>Stekan Stars — это 2D игра, посвящённая захватывающим битвам. Сражайся с противниками, прокачивай своего персонажа и исследуй мир, полный опасностей и приключений.</p>
+        <p>Игра создана автором <strong>Ershico games</strong>. Погрузись в уникальную атмосферу и оцени геймплей прямо сейчас!</p>
       </div>
       <ul class="features">
-        <li>Ручной пиксель-арт и рисованные фоны</li>
-        <li>Пошаговые бои с прокачкой</li>
-        <li>Несколько концовок (в полной версии)</li>
-        <li>Оригинальный саундтрек</li>
+        <li>Динамичные 2D битвы</li>
+        <li>Уникальные противники</li>
+        <li>Атмосферный саундтрек</li>
+        <li>Постоянные обновления</li>
       </ul>
     </div>
   </div>
@@ -421,7 +404,7 @@
       <p>Четыре шага — и в бой.</p>
     </div>
     <div class="steps">
-      <div class="step"><h3>Скачай</h3><p>Нажми «Скачать демо» и дождись загрузки .apk файла.</p></div>
+      <div class="step"><h3>Скачай</h3><p>Нажми «Скачать» и дождись загрузки .apk файла.</p></div>
       <div class="step"><h3>Разреши</h3><p>Открой файл. Если система ругается — разреши установку из этого источника.</p></div>
       <div class="step"><h3>Установи</h3><p>Нажми «Установить» и подожди пару секунд.</p></div>
       <div class="step"><h3>Запусти</h3><p>Открой игру с рабочего стола и играй.</p></div>
@@ -438,13 +421,13 @@
         <p>Сайт сделан с разрешения автора игры.</p>
       </div>
       <div>
-        <p>Автор игры: <span style="color:var(--gold-soft)">Имя автора</span></p>
-        <p>Связаться: <a href="mailto:mail@example.com" style="color:var(--gold-soft)">mail@example.com</a></p>
+        <p>Автор игры: <span style="color:var(--gold-soft)">Ershico games</span></p>
+        <p>Связаться: <a href="https://t.me/Banana_Studios" target="_blank" style="color:var(--gold-soft); border-bottom: 1px solid rgba(227,199,102,0.3); padding-bottom: 2px;">Banana Studios (Telegram)</a></p>
       </div>
     </div>
     <div class="footer-note">
-      <span>© 2026 Сайт скачивания. Все права на игру принадлежат автору.</span>
-      <span>Сделано с ♥ для игроков</span>
+      <span>© 2026 Stekan Stars. Все права принадлежат Ershico games.</span>
+      <span>Сделано с ♥</span>
     </div>
   </div>
 </footer>
@@ -464,4 +447,4 @@
 </script>
 
 </body>
-  </html>
+</html>
